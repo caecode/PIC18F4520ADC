@@ -79,17 +79,17 @@ void main(void) {
     //Set the TRISD as output (LEDs)
     TRISD=0x00;
     
-    // Select the A/D channel to AN0
+    //Line 1: Select the A/D channel to AN0
     ADCON0=0x00;
     
-    //Set vdd and vss as vrefs. Set AN0 as the A/D port
+    //Line 2: Set vdd and vss as vrefs. Set AN0 as the A/D port
     ADCON1=0x0E;
     
     
-    // Right Justified format, Acquisition time=4Tad, A/D Conversion Clock source Fosc/16
+    // Line 3: Right Justified format, Acquisition time=4Tad, A/D Conversion Clock source Fosc/16
     ADCON2 = 0x95;
 
-    // Clear ADRESL and ADRESH
+    // Line 4: Clear ADRESL and ADRESH
     ADRESL = 0x00;
 
     ADRESH = 0x00;
