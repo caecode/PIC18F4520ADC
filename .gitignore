@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/PIC18F4520ADC.X/nbproject/private/
+/PIC18F4520ADC.X/build/default/
+/PIC18F4520ADC.X/dist/default/
